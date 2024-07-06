@@ -12,6 +12,10 @@ body {
   background-color: black;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 .hamburger-menu-links-container {
   display: none;
   background-color: rgb(15, 15, 15);
@@ -292,7 +296,7 @@ body {
 }
 .skills-container .frontend-skills-container .skills-containers {
   display: flex;
-  gap: 1em 2em;
+  gap: 1em 2.5em;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
@@ -304,6 +308,7 @@ body {
   align-items: center;
   flex-direction: column;
   padding: 0;
+  width: 50px;
 }
 .skills-container .frontend-skills-container .skills-containers div h3 {
   margin-bottom: 0.5em;
@@ -326,7 +331,7 @@ body {
 }
 .skills-container .backend-skills-container .skills-containers {
   display: flex;
-  gap: 1em 2em;
+  gap: 1em 2.5em;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
@@ -341,6 +346,7 @@ body {
   align-items: center;
   flex-direction: column;
   padding: 0;
+  width: 90px;
 }
 .skills-container .backend-skills-container .skills-containers div h3 {
   margin-bottom: 0.5em;
@@ -360,7 +366,7 @@ body {
 }
 .skills-container .other-skills-container .skills-containers {
   display: flex;
-  gap: 1em 2em;
+  gap: 1em 2.5em;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
@@ -375,6 +381,7 @@ body {
   align-items: center;
   flex-direction: column;
   padding: 0;
+  width: 50px;
 }
 .skills-container .other-skills-container .skills-containers div h3 {
   margin-bottom: 0.5em;
@@ -509,15 +516,16 @@ body {
   justify-content: center;
   align-items: center;
   height: 550px;
+  position: relative;
 }
 .about-me-section .about-me-container .about-me-image {
   height: 550px;
   position: absolute;
   opacity: 0.4;
-  z-index: 1;
 }
 .about-me-section .about-me-container .about-me-container-right {
   width: 90%;
+  z-index: 2;
 }
 .about-me-section .about-me-container .about-me-container-right .about-me-description {
   font-family: "Work Sans", sans-serif;
@@ -525,7 +533,7 @@ body {
   line-height: 1.8;
   text-align: justify;
   color: white;
-  z-index: 2;
+  opacity: 1;
 }
 
 .contact-section {
@@ -756,6 +764,11 @@ body {
     align-self: center !important;
     padding-top: 0 !important;
     font-size: 1.9em !important;
+  }
+}
+@media (max-width: 440px) {
+  .about-me-container {
+    height: 700px !important;
   }
 }
 @keyframes right-to-left {
