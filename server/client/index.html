@@ -14,7 +14,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
-        <script src="https://kit.fontawesome.com/eb11c18b88.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/eb11c18b88.js" crossorigin="anonymous"></script>
     <title>J. Shoulars Portfolio</title>
 </head>
 
@@ -164,28 +164,38 @@
     <section class="projects-section" id="projects-section">
         <h2 class="projects-section-header">Latest Projects</h2>
         <div class="projects-container">
-            <div class="project-container-3 project-cards">
+
+            <div class="project-container-2 project-cards">
                 <div class="project-container-left">
                     <div class="project-image-container">
-                        <img src="./images/Project Images/Capture_3.png" alt="" class="project-image-1 project-images">
+                        <img src="./images/Project Images/Capture_2.png" alt="" class="project-image-2 project-images">
                     </div>
                 </div>
                 <div class="project-container-right">
                     <div class="project-description-container">
-                        <h3 class="project-title">Southeast Welding Academy</h3>
-                        <p class="project-description">Southeast Welding Academy is a remake of a welding apprenticeship
-                            that was closed due to covid. This website was made using HTML, CSS, Sass and JavaScript.
-                        </p>
+                        <h3 class="project-title">DeepBlue Pursuits</h3>
+                        <p class="project-description">DeepBlue Pursuits is an online fishing rod shop created using
+                            React, Firebase, Sass, React Router and Paypal to handle payments. Users are able to
+                            create an account, add and remove items from cart, and add user information for autofill
+                            on checkout. User cart is updated using firestore database.</p>
+                        <div class="project-email-container">
+                            <p class="project-emails">TEST EMAILS:</p>
+                            <p class="project-emails">jlstest001@proton.me & jlstest002@proton.me</p>
+                            <br>
+                            <p class="project-password">TEST PASSWORD: </p>
+                            <p class="project-password">password123</p>
+                        </div>
                         <ul class="project-call-to-action-container">
-                            <li class="project-links project-link"><a
-                                    href="https://southwest-welding-academy.vercel.app" target="_blank">Demo</a></li>
+                            <li class="project-links project-link"><a href="https://deepblue-pursuits-react.vercel.app/"
+                                    target="_blank">Demo</a></li>
                             <li class="project-links project-link-github"><a
-                                    href="https://github.com/JLS730/southwest-welding-academy" target="_blank">Github
+                                    href="https://github.com/JLS730/deepblue-pursuits-react" target="_blank">Github
                                     Repo</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
+            
             <div class="project-container-1 project-cards">
                 <div class="project-container-left">
                     <div class="project-image-container">
@@ -217,31 +227,24 @@
                     </div>
                 </div>
             </div>
-            <div class="project-container-2 project-cards">
+
+            <div class="project-container-3 project-cards">
                 <div class="project-container-left">
                     <div class="project-image-container">
-                        <img src="./images/Project Images/Capture_2.png" alt="" class="project-image-2 project-images">
+                        <img src="./images/Project Images/Capture_3.png" alt="" class="project-image-1 project-images">
                     </div>
                 </div>
                 <div class="project-container-right">
                     <div class="project-description-container">
-                        <h3 class="project-title">DeepBlue Pursuits</h3>
-                        <p class="project-description">DeepBlue Pursuits is an online fishing rod shop created using
-                            React, Firebase, Sass, React Router and Paypal to handle payments. Users are able to
-                            create an account, add and remove items from cart, and add user information for autofill
-                            on checkout. User cart is updated using firestore database.</p>
-                        <div class="project-email-container">
-                            <p class="project-emails">TEST EMAILS:</p>
-                            <p class="project-emails">jlstest001@proton.me & jlstest002@proton.me</p>
-                            <br>
-                            <p class="project-password">TEST PASSWORD: </p>
-                            <p class="project-password">password123</p>
-                        </div>
+                        <h3 class="project-title">Southeast Welding Academy</h3>
+                        <p class="project-description">Southeast Welding Academy is a remake of a welding apprenticeship
+                            that was closed due to covid. This website was made using HTML, CSS, Sass and JavaScript.
+                        </p>
                         <ul class="project-call-to-action-container">
-                            <li class="project-links project-link"><a href="https://deepblue-pursuits-react.vercel.app/"
-                                    target="_blank">Demo</a></li>
+                            <li class="project-links project-link"><a
+                                    href="https://southwest-welding-academy.vercel.app" target="_blank">Demo</a></li>
                             <li class="project-links project-link-github"><a
-                                    href="https://github.com/JLS730/deepblue-pursuits-react" target="_blank">Github
+                                    href="https://github.com/JLS730/southwest-welding-academy" target="_blank">Github
                                     Repo</a></li>
                         </ul>
                     </div>
@@ -254,7 +257,9 @@
     <section class="about-me-section" id="about-me-section">
         <h2 class="about-me-section-header">About Me</h2>
         <div class="about-me-container">
+
             <img src="./images/about-me-image.png" alt="" class="about-me-image">
+
             <div class="about-me-container-right">
                 <p class="about-me-description">Hello, my name is Jaron and I am a front-end developer from
                     Maryland. My objective is to obtain a position with a prospering company with considerable
@@ -273,9 +278,6 @@
                 <form action="/send_email" method="post" class="contact-form">
                     <div class="contact-email">
                         <input type="text" class="email-input" name="email" placeholder="Email Address *" required>
-                    </div>
-                    <div class="contact-subject">
-                        <input type="text" class="subject-input" name="subject" placeholder="Subject *" required>
                     </div>
                     <textarea id="" cols="30" rows="10" class="contact-information" name="text"
                         placeholder="Leave a Question..." required></textarea>
