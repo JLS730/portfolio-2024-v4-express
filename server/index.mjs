@@ -24,6 +24,8 @@ app.post('/send_email', (request, response) => {
     const subject = request.body.subject
     const text = request.body.text
 
+    console.log(email, subject, text)
+
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
@@ -33,9 +35,8 @@ app.post('/send_email', (request, response) => {
     });
 
     const mailOptions = {
-        from: email,
         to: 'jaronshoulars@gmail.com',
-        subject: subject,
+        subject: email,
         text: text
     }
 
@@ -46,7 +47,7 @@ app.post('/send_email', (request, response) => {
             console.log('Email Sent ' + info.response)
         }
         
-        response.redirect('/')
+        // response.redirect('/')
     })
 })
 
